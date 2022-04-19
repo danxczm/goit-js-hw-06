@@ -20,3 +20,5 @@ function onColorChange() {
   refs.textColor.textContent = getRandomHexColor();
   refs.backgroundColor.style.backgroundColor = getRandomHexColor();
 }
+
+console.log(getRandomHexColor());

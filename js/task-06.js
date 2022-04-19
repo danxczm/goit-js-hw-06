@@ -19,10 +19,10 @@ passwordInput.addEventListener('blur', checkInputLength);
 
 function checkInputLength(event) {
   if (event.currentTarget.value.length == passwordInput.dataset.length) {
-    passwordInput.classList.replce('invalid', 'valid');
-    // passwordInput.classList.add('valid');
+    passwordInput.classList.remove('invalid');
+    passwordInput.classList.add('valid');
   } else {
-    passwordInput.classList.replace('valid', 'invalid');
-    // passwordInput.classList.add('invalid');
+    passwordInput.classList.remove('valid');
+    passwordInput.classList.add('invalid');
   }
 }

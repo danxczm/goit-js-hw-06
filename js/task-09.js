@@ -12,8 +12,6 @@ const refs = {
   backgroundColor: document.querySelector('body'),
 };
 
-function changeColorByClick(event) {}
-
 refs.colorButton.addEventListener('click', onColorChange);
 
 function onColorChange() {
